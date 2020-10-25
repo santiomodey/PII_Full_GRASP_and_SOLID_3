@@ -26,6 +26,9 @@ namespace Full_GRASP_And_SOLID
             recipe.AddStep(new Step(GetProduct("Café"), 100, GetEquipment("Cafetera"), 120));
             recipe.AddStep(new Step(GetProduct("Leche"), 200, GetEquipment("Hervidor"), 60));
 
+            /// <summary>
+            /// Cambios en el program para poder utilizar las nuevas implementaciones
+            /// </summary>
             IPrinter printer;
             printer = new ConsolePrinter();
             printer.PrintRecipe(recipe);
